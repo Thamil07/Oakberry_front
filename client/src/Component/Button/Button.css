@@ -1,0 +1,19 @@
+.button {
+	border: none;
+	background-color: var(--primary-color);
+	color: white;
+	font-weight: 600;
+	padding: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-transform: uppercase !important;
+	letter-spacing: 1px;
+}
+.round {
+	border-radius: 50%;
+	padding:1rem;
+	
+}
+.square {
+	border-radius: 0;
+}

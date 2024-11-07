@@ -1,0 +1,42 @@
+.intouch_parent {
+	background-image: url("https://preview.colorlib.com/theme/oakberry/images/bg_4.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.intouch_content {
+	background-color: #5fa51dcc;
+}
+.intouch {
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	padding: 3rem 9rem;
+	justify-content: flex-start;
+	align-items: center;
+	color: white;
+}
+.intouch_quotes h1 {
+	color: white;
+	font-size: 50px;
+	font-weight: 600;
+	width: 90%;
+	line-height: 1.5;
+}
+.intouch_button .button {
+	background-color: black !important;
+	font-size: 13px;
+	padding: 1rem !important;
+}
+@media (max-width: 768px) {
+	.intouch {
+		flex-direction: column;
+		width: 100%;
+		padding: 3rem 1rem;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.intouch_quotes h1 {
+		font-size: 28px;
+	}
+}

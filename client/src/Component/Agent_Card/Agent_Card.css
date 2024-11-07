@@ -1,0 +1,69 @@
+.Agent_card_parent {
+	display: flex;
+	flex-direction: column;
+	width: 100%; /* Adjust this percentage if you want more or fewer cards per row */
+	height: 100%;
+	background-color: #333; /* Example background color */
+	color: white;
+	border-radius: 3px; /* Rounded corners */
+	overflow: hidden; /* To ensure content stays inside the card */
+}
+.Agent_card_parent:hover img {
+	transform: scale(1.1);
+	filter: brightness(0.5);
+	overflow: hidden;
+	transition: transform 1s ease-in-out, filter 1s ease-out;
+}
+.Agent_card_parent .menu,
+i {
+	display: none;
+	margin-right: 0rem;
+	cursor: default;
+}
+.agent_img {
+	height: 290px; /* Sets the height of the image container */
+	width: 100%;
+	overflow: hidden;
+}
+
+.agent_img img {
+	width: 100%;
+	height: 100%; /* Ensure the image fills the container */
+	object-fit: cover;
+	object-position: top;
+}
+
+.Agent_card_parent .count {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.Agent_card_parent h1 {
+	font-size: 24px;
+	font-weight: 700;
+}
+.Agent_card_detail {
+	background-color: var(--primary-color);
+	padding: 30px;
+}
+.social {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start !important;
+	gap: 5px;
+}
+.social a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	width: 34px;
+	height: 34px;
+	text-decoration: none;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	transition: background-color 0.3s ease;
+}
+.social a:hover {
+	background-color: rgb(4, 4, 50) !important;
+}

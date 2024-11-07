@@ -1,0 +1,10 @@
+:root {
+	--primary-color: #5ea51d;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Nunito Sans", Arial, sans-serif;
+}

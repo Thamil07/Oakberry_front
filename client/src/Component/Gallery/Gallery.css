@@ -1,0 +1,52 @@
+.container-xl-fluid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.galley_img {
+	width: 16.6666%;
+	height: 24rem;
+	position: relative;
+	overflow: hidden; /* Ensure the icon stays within the boundaries of the image */
+}
+
+.galley_img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.gallery_icon {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+	color: white;
+	font-size: 2rem;
+	opacity: 0;
+	transition: opacity 0.3s ease; /* Smooth transition for fade-in effect */
+}
+
+.galley_img:hover .gallery_icon {
+	opacity: 1; /* Show the icon when hovering over the image */
+}
+.gallery_icon .fa-solid {
+	padding: 0.8rem;
+	border-radius: 50%;
+	font-size: small;
+	background-color: var(--primary-color);
+}
+@media(max-width:786px){
+	.container-xl-fluid{
+		flex-direction: column;
+	}
+	.galley_img{
+		width: 100%;
+	}
+}

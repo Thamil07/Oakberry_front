@@ -1,0 +1,122 @@
+/* .filter {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 100%;
+	position: absolute;
+	top: 85%;
+} */
+.filter input {
+	outline: none;
+}
+.Home_hero_section .filter {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 100%;
+	position: absolute;
+	bottom: -2%;
+	z-index: 1000;
+}
+.option select {
+	outline: none;
+	border: none;
+	font-size: 16px;
+	padding-left: 0;
+	color: rgb(175, 171, 171);
+}
+.active_bt .button {
+	border: none;
+	background-color: black;
+	color: white;
+}
+
+.filter .bt {
+	display: flex;
+	flex-direction: row;
+	gap: 0.2rem;
+	justify-content: center;
+	align-items: center;
+}
+.filter .option {
+	font-family: "Nunito Sans", Arial, sans-serif;
+	font-size: 14px;
+	padding-bottom: 1rem;
+}
+.filter .searchbar {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.filter .container {
+	padding: 0;
+}
+.filter .option {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1%;
+	flex: 1;
+	text-align: left;
+	width: 100%;
+	padding: 1rem;
+	border-right: rgba(100, 96, 96, 0.635) solid 1px;
+}
+.filter .option div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.3rem;
+	font-size: 14px;
+	padding: 0;
+	padding-left: 0.5rem;
+	color: rgba(171, 164, 164, 0.329) !important;
+}
+.filter .prlt {
+	border-right: rgba(100, 96, 96, 0.635) solid 0px;
+}
+
+.filter .option p {
+	padding: 0%;
+	padding-left: 0.5rem;
+	font-weight: 600;
+	font-size: 14px !important;
+	text-transform: uppercase;
+}
+.filter .searchbar input {
+	border: none;
+	background-color: transparent;
+}
+.filter .Search {
+	text-align: center;
+	background-color: var(--primary-color);
+	padding: 1.8rem;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	font-size: 24px;
+	width: 100%;
+	height: 100%;
+}
+@media (max-width: 900px) {
+	.searchbar {
+		flex-direction: column;
+	}
+	.filter .Search {
+		padding: 1rem;
+	}
+}
+@media (max-width: 600px) {
+	.filter .bt {
+		display: flex;
+		flex-direction: column;
+	}
+}

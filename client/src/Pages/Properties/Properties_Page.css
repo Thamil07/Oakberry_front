@@ -1,0 +1,77 @@
+.head_properties {
+	position: relative;
+}
+.head_properties .filter {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	width: 100%;
+	position: absolute;
+	top: 75%;
+}
+.feature-properties {
+	display: grid;
+	grid-template-columns: repeat(
+		4,
+		1fr
+	); /* Displays property cards in 4 columns */
+	gap: 1.5rem; /* Space between each property card */
+	padding: 10em 0; /* Adjust the padding as needed */
+}
+.no-data p {
+	margin: 10rem;
+	text-align: center;
+	font-size: 36px;
+	font-family: "DynaPuff", system-ui !important;
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+	gap: 0.5rem;
+}
+
+.pagination button {
+	background-color: #ffffff;
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover {
+	background-color: var(--primary-color);
+	color: #ffffff;
+}
+
+.pagination button:disabled {
+	background-color: #e0e0e0;
+	color: #b0b0b0;
+	cursor: not-allowed;
+}
+
+.pagination .active {
+	background-color: var(--primary-color);
+	color: #ffffff;
+	border: 1px solid var(--primary-color);
+}
+@media (max-width: 900px) {
+	.feature-properties {
+		padding: 10rem 1rem 5rem 1rem;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.parent_properties .feature-properties {
+		padding: 20rem 1rem 10rem 1rem;
+	}
+	.parent_properties.feature-properties {
+		margin-top: 15rem !important;
+	}
+	.price_list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+}

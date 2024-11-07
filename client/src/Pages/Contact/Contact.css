@@ -1,0 +1,106 @@
+.parent_contact {
+	background-color: rgba(128, 128, 128, 0.244);
+}
+.contact_content {
+	display: flex;
+	flex-direction: row;
+	padding: 7em 0;
+}
+.contact_content_first {
+	padding: 3rem;
+	width: 50%;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contact_content_first h2 {
+	margin-bottom: 0.5rem;
+	font-size: 30px;
+}
+.contact_content_first p {
+	margin-bottom: 1.5rem;
+}
+.company_contact {
+	display: flex;
+	flex-direction: row;
+}
+.company_contact div {
+	flex: 1;
+}
+.address {
+	width: 80%;
+	color: rgba(128, 128, 128, 0.671);
+}
+.contact_input {
+	display: flex;
+	flex-direction: column;
+}
+.contact_content_first h1 {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.contact_input input,
+textarea {
+	border: none;
+	outline: none;
+	border-bottom: rgba(128, 128, 128, 0.447) 1px solid;
+	border-radius: 2px;
+	font-size: 14px;
+	height: 45px;
+}
+.i:focus,
+textarea:focus {
+	border-bottom: var(--primary-color) 1px solid;
+}
+
+.contact_bt {
+	margin-top: 0.5rem;
+	width: 50%;
+}
+
+.contact_input textarea {
+	height: 80px !important;
+}
+
+.contact_icon {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 50%;
+}
+.contact_icon a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: var(--primary-color);
+	color: white;
+}
+.contact_content_second {
+	width: 50%;
+	background-color: rgba(128, 128, 128, 0.537);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contact_content_second iframe{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+
+}
+@media(max-width:900px) {
+
+	.company_contact {
+		display: flex;
+		flex-direction: column;
+	}
+	.contact_content {
+		display: flex;
+		flex-direction: column;
+		padding: 7em 0;
+	}
+	.contact_content_second,.contact_content_first{
+		width: 100%;
+	}
+}

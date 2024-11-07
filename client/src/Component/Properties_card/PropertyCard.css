@@ -1,0 +1,66 @@
+
+.property-display {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.properties-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
+}
+
+/* Styling for pagination buttons */
+.pagination {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	gap: 0.5rem;
+}
+
+.pagination button {
+	background-color: #ffffff;
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover {
+	background-color: var(--primary-color);
+	color: #ffffff;
+}
+
+.pagination button:disabled {
+	background-color: #e0e0e0;
+	color: #b0b0b0;
+	cursor: not-allowed;
+}
+
+/* Active page number button */
+.pagination .active {
+	background-color: var(--primary-color);
+	color: #ffffff;
+	border: 1px solid var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.properties-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.pagination {
+		flex-wrap: wrap;
+		gap: 0.2rem;
+	}
+
+	.pagination button {
+		padding: 0.3rem 0.6rem;
+	}
+}

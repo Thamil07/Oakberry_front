@@ -1,0 +1,17 @@
+.parent_agent .home_agent_card_detail {
+	padding: 7em 0 !important;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 900px) {
+	.parent_agent .home_agent_card_detail {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 10rem 1rem !important;
+	}
+}
+@media (max-width: 700px) {
+	.parent_agent .home_agent_card_detail {
+		grid-template-columns: repeat(1, 1fr);
+		padding: 10rem 1rem !important;
+	}
+}
